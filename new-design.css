@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  color: #555;
+}
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+section {
+  text-align: center;
+  padding: 30px 0;
+}
+  section p {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+div.dos {
+  max-width: 600px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  div.dos {
+    display: block;
+  }
+
+  .dos img {
+    padding: 15px 0;
+  }
+}
+  .dos img {
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  .dos .izq,
+  .dos .der {
+    flex: 1;
+    font-size: 1.3em;
+    color: #75aca1;
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  h4 {
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 2em;
+  }
+
+  h3 {
+    font-weight: 300;
+  }
+
+a {
+  padding: 6px 9px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+  .green-btn {
+    padding: 6px 9px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    border: none;
+    background-color: #66b751;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .aqua-btn {
+    background-color: #7fb1a8;
+    color: #eee;
+    text-transform: none;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+section#portrait {
+  padding: 60px 0 50px;
+  background: url('index_files/fondo-1200w.png') no-repeat center center;
+  background-size: contain;
+}
+
+
+@media only screen and (max-width: 500px) {
+  section#portrait {
+    background: url('index_files/fondo-1200w.png') no-repeat;
+    background-size: contain;
+  }
+    #portrait .rectangulo {
+      width: auto;
+    }
+
+    #portrait .rectangulo #btns-portrait {
+      display: block;
+    }
+    #portrait .rectangulo #btns-portrait button{
+      display: block;
+      margin: auto;
+      margin-bottom: 5px;
+    }
+  }
+  #portrait img.vientos-name {
+    width: 120px;
+  }
+  #portrait img.spin {
+      width: 100px;
+      height: 100px;
+      -webkit-animation:spin 8s linear infinite;
+      -moz-animation:spin 8s linear infinite;
+      animation:spin 8s linear infinite;
+  }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+  #portrait h1 { color: #66b751;}
+
+section#why {
+  padding: 30px 0;
+  background-color: #fff;
+}
+  #why input#why-toggle {
+    display: none;
+    visibility: hidden;
+  }
+    #why label::after {
+      content: ' más';
+    }
+    #why #why-toggle:checked ~ #more-why {
+      height: 200px;
+    }
+    #why #why-toggle:checked ~ #why label::after {
+      content: ' menos';
+    }
+  #why #more-why {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+section#participate {
+  background-color: #eee;
+}
+section#how {
+  background-color: #fff;
+}
+section#community {
+  background-color: #eee;
+}
+
+  #community h1 {
+    margin-bottom: 10px;
+  }
+  #community h3 {
+    margin-top: 10px;
+  }
+section#us {
+  background-color: #fff;
+}
+section#faqs {
+  background-color: #7fb1a8;
+  color: white;
+}
+footer {
+  background-color: aqua-obscuro;
+  color: white;
+}
+
+.cuadrito {
+  background-color: white;
+  width: 120px;
+  margin: auto;
+}
+  .cuadrito h1 {
+    margin: 0;
+  }
+.rectangulo {
+  background-color: white;
+  width: 300px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+  .rectangulo #btns-portrait{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section img {
+    width: 130px;
+  }
