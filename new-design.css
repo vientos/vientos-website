@@ -3,16 +3,12 @@ body {
   color: #555;
 }
 
-  section {
-    padding: 10px;
-  }
-
 * {
   font-family: 'Source Sans Pro', sans-serif;
 }
 section {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
   section p {
     max-width: 500px;
@@ -31,16 +27,18 @@ div.dos {
   padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 600px) {
-  div.dos {
-    max-width: auto;
-    display: block;
-  }
+    @media only screen and (max-width: 600px) {
+      div.dos {
+        max-width: auto;
+        display: block;
+      }
 
-  .dos img {
-    padding: 15px 0;
-  }
-}
+      .dos img {
+        padding: 15px 0;
+      }
+    }
+
+
   .dos img {
     display: block;
     margin: auto;
@@ -149,17 +147,13 @@ section#why {
       content: ' más';
     }
     #why #why-toggle:checked ~ #more-why {
-      height: 200px;
+      height: auto;
     }
 
-    @media only screen and (max-width: 600px) {
-      #why #why-toggle:checked ~ #more-why {
-        height: 400px;
-      }
-    }
     #why #why-toggle:checked ~ #why label::after {
       content: ' menos';
     }
+
   #why #more-why {
     height: 0px;
     overflow: hidden;
