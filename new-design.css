@@ -2,6 +2,11 @@ body {
   margin: 0;
   color: #555;
 }
+
+  section {
+    padding: 10px;
+  }
+
 * {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -14,6 +19,11 @@ section {
     margin: auto;
     margin-bottom: 20px;
   }
+
+.white {
+  color: white;
+  fill: white;  
+}
 div.dos {
   max-width: 600px;
   display: flex;
@@ -21,8 +31,9 @@ div.dos {
   padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   div.dos {
+    max-width: auto;
     display: block;
   }
 
@@ -91,7 +102,7 @@ section#portrait {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   section#portrait {
     background: url('index_files/fondo-1200w.png') no-repeat;
     background-size: contain;
@@ -103,10 +114,11 @@ section#portrait {
     #portrait .rectangulo #btns-portrait {
       display: block;
     }
-    #portrait .rectangulo #btns-portrait button{
+    #portrait .rectangulo #btns-portrait a{
       display: block;
       margin: auto;
       margin-bottom: 5px;
+      width: 60%;
     }
   }
   #portrait img.vientos-name {
@@ -138,6 +150,12 @@ section#why {
     }
     #why #why-toggle:checked ~ #more-why {
       height: 200px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #why #why-toggle:checked ~ #more-why {
+        height: 400px;
+      }
     }
     #why #why-toggle:checked ~ #why label::after {
       content: ' menos';
@@ -198,3 +216,10 @@ footer {
   section img {
     width: 130px;
   }
+  
+
+  section img {
+    width: 130px;
+  }
+
+  
